@@ -9,7 +9,7 @@ const assetMap: { id: string; url: string; alt?: string }[] = [
   { id: "teamImage1", url: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Close-up of professionals shaking hands over coffee in a modern office." }
 ];
 
-'use client';
+"use client";
 import { ThemeProvider } from '@/providers/ThemeProvider';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
