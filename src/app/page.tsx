@@ -1,14 +1,3 @@
-// Provided by the backend
-const assetMap: { id: string; url: string; alt?: string }[] = [
-  { id: "heroImage", url: "https://images.pexels.com/photos/34301930/pexels-photo-34301930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "High-End Gaming PC Interior with Colorful RGB Lights" },
-  { id: "aboutImage", url: "https://images.pexels.com/photos/34234301/pexels-photo-34234301.png?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Two professionals working at a shared office desk, top view." },
-  { id: "featureImage1", url: "https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Flatlay of a business analytics report, keyboard, pen, and smartphone on a wooden desk." },
-  { id: "featureImage2", url: "https://images.pexels.com/photos/1181531/pexels-photo-1181531.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Two women engaging in teamwork by writing on a whiteboard in a bright office setting." },
-  { id: "featureImage3", url: "https://images.pexels.com/photos/4491441/pexels-photo-4491441.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "A business desk setup with a calculator, papers, and a keyboard, reflecting a work environment." },
-  { id: "metricImage", url: "https://images.pexels.com/photos/7688174/pexels-photo-7688174.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "A multicultural office team high-fiving and celebrating a successful collaboration." },
-  { id: "teamImage1", url: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Close-up of professionals shaking hands over coffee in a modern office." }
-];
-
 "use client";
 import { ThemeProvider } from '@/providers/ThemeProvider';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
@@ -20,6 +9,9 @@ import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import TeamCardOne from '@/components/sections/team/TeamCardOne';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterBase from '@/components/sections/footer/FooterBase';
+
+// Provided by the backend
+const assetMap = [{ id: "heroImage", url: "https://images.pexels.com/photos/34301930/pexels-photo-34301930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "High-End Gaming PC Interior with Colorful RGB Lights" }, { id: "aboutImage", url: "https://images.pexels.com/photos/34234301/pexels-photo-34234301.png?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Two professionals working at a shared office desk, top view." }, { id: "featureImage1", url: "https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Flatlay of a business analytics report, keyboard, pen, and smartphone on a wooden desk." }, { id: "featureImage2", url: "https://images.pexels.com/photos/1181531/pexels-photo-1181531.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Two women engaging in teamwork by writing on a whiteboard in a bright office setting." }, { id: "featureImage3", url: "https://images.pexels.com/photos/4491441/pexels-photo-4491441.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "A business desk setup with a calculator, papers, and a keyboard, reflecting a work environment." }, { id: "metricImage", url: "https://images.pexels.com/photos/7688174/pexels-photo-7688174.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "A multicultural office team high-fiving and celebrating a successful collaboration." }, { id: "teamImage1", url: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Close-up of professionals shaking hands over coffee in a modern office." }];
 
 export default function Home() {
   return (
